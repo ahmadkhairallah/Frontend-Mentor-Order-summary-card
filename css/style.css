@@ -1,0 +1,95 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d6e1ff;
+}
+.wrapper {
+    background-image: url(../images/pattern-background-desktop.svg);
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+.wrapper .box {
+background-color: white;
+width: 400px;
+border-radius: 10px;
+
+}
+@media (max-width: 767px) {
+    .wrapper .box {
+        width: 320px;
+    }
+}
+.box .content {
+    padding: 20px;
+    text-align: center;
+}
+.wrapper .box img {
+width: 100%;
+border-radius: 10px;
+}
+.wrapper .box h1 {
+margin-top: 0;
+}
+.box p {
+color: #aaa ;
+}
+.box .details-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+.box .details-box .left {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.box .details-box .left img {
+width: 50px;
+}
+.box .details-box .left h4 {
+margin-bottom: 0;
+}
+.box .details-box .left p {
+margin-top: 10px;
+}
+.box .details-box a {
+text-decoration: none;
+color:  hsl(245, 75%, 52%);
+}
+.box .pay {
+background-color: hsl(245, 75%, 52%);
+padding: 15px;
+border-radius: 10px;
+margin-bottom: 20px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+cursor: pointer;
+transition: 0.3s;
+box-shadow: 0 4px 8px rgba(72, 61, 139, 0.3), /* لون بنفسجي داكن */
+0 6px 20px rgba(72, 61, 139, 0.15);
+}
+@media (max-width: 767px) {
+    .box .pay {
+       padding: 10px; 
+       font-size: 18px;
+    }
+}
+.box .pay:hover {
+    background-color: hsl(245, 68%, 59%);;
+}
+.box button {
+border: none;
+outline: none;
+background-color: white;
+font-size: 17px;
+font-weight: bold;
+color: hsl(245, 75%, 52%);
+cursor: pointer;
+}
